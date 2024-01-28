@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=python-autocommand
@@ -25,5 +27,11 @@ check() {
 
 package() {
   cd autocommand-$pkgver
-  python setup.py install --root="$pkgdir" --optimize=1
+  python \
+    setup.py \
+    install \
+    --root="$pkgdir" \
+    --optimize=1
 }
+
+# vim:set sw=2 sts=-1 et:
