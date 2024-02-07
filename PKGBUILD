@@ -9,8 +9,13 @@ pkgdesc="A library to create a command-line program from a function"
 url="https://github.com/Lucretiel/autocommand"
 license=('LGPL')
 arch=('any')
-depends=('python')
-makedepends=('python-setuptools')
+depends=(
+  'python'
+)
+makedepends=(
+  'python-setuptools'
+  'python-jaraco.text'
+)
 checkdepends=('python-pytest')
 source=("https://github.com/Lucretiel/autocommand/archive/$pkgver/$pkgname-$pkgver.tar.gz")
 sha512sums=('5ed109db16a0e309ed5107b26db0b70ed8669d73817e82eb5a219650d29f53785aa1f9471b2ac71d21dbffc9f0a13ea0fdf69e63ab534fd84407a1d6741cf5b5')
