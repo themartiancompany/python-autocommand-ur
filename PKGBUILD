@@ -1,13 +1,17 @@
 # SPDX-License-Identifier: AGPL-3.0
 #
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Maintainer:  Pellegrino Prevete <cGVsbGVncmlub3ByZXZldGVAZ21haWwuY29tCg== | base -d>
+# Maintainer:  Truocolo <truocolo@aol.com>
 
 pkgname=python-autocommand
 pkgver=2.2.1
 pkgrel=4
 pkgdesc="A library to create a command-line program from a function"
 url="https://github.com/Lucretiel/autocommand"
-license=('LGPL')
+license=(
+  'LGPL'
+)
 arch=('any')
 depends=(
   'python'
@@ -17,9 +21,11 @@ makedepends=(
   'python-jaraco.text'
 )
 checkdepends=('python-pytest')
-source=("https://github.com/Lucretiel/autocommand/archive/$pkgver/$pkgname-$pkgver.tar.gz")
-sha512sums=(
-  '6ab6b7f712c9e57cefb25299e2f98359bb39fd55439fc40a5c9ed752ff54f664c9badf044418576c0dc47b1b76114d96946b2df5343b27eeb87eb24'
+source=(
+  "${url}/archive/$pkgver/$pkgname-$pkgver.tar.gz"
+)
+sha256sums=(
+  '0c320f9dd256ad133dcfb6476ff95a36727351930122cc14d3e91810ec1f09cd'
 )
 
 build() {
