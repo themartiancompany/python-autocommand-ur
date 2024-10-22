@@ -3,6 +3,8 @@
 # Maintainer: Truocolo <truocolo@aol.com>
 # Maintainer: Pellegrino Prevete (tallero) <pellegrinoprevete@gmail.com>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Maintainer:  Pellegrino Prevete <cGVsbGVncmlub3ByZXZldGVAZ21haWwuY29tCg== | base -d>
+# Maintainer:  Truocolo <truocolo@aol.com>
 
 _py="python"
 _pyver="$( \
@@ -14,7 +16,7 @@ _pymajver="${_pyver%.*}"
 _pkg=autocommand
 pkgname="${_py}-${_pkg}"
 pkgver=2.2.2
-pkgrel=4
+pkgrel=1
 pkgdesc="A library to create a command-line program from a function"
 _http="https://github.com"
 _ns="Lucretiel"
@@ -40,7 +42,6 @@ source=(
 sha512sums=(
   '5ed109db16a0e309ed5107b26db0b70ed8669d73817e82eb5a219650d29f53785aa1f9471b2ac71d21dbffc9f0a13ea0fdf69e63ab534fd84407a1d6741cf5b5'
 )
-
 build() {
   cd \
     "${_pkg}-${pkgver}"
