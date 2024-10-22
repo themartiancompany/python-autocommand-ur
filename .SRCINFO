@@ -7,7 +7,7 @@ pkgbase = python-autocommand
 	license = LGPL
 	checkdepends = python-pytest
 	makedepends = python-setuptools
-	depends = python
+	depends = python>=3.12
 	source = https://github.com/Lucretiel/autocommand/archive/2.2.2/python-autocommand-2.2.2.tar.gz
 	sha512sums = 5ed109db16a0e309ed5107b26db0b70ed8669d73817e82eb5a219650d29f53785aa1f9471b2ac71d21dbffc9f0a13ea0fdf69e63ab534fd84407a1d6741cf5b5
 
